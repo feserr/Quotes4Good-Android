@@ -1,0 +1,1083 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <row>
+    <id>1</id>
+    <quote>Absorb what is useful, reject what is useless, add what is specifically your own.</quote>
+    <author>Bruce Lee</author>
+  </row>
+  <row>
+    <id>2</id>
+    <quote>If you spend too much time thinking about a thing, youâ€™ll never get it done.</quote>
+    <author>Bruce Lee</author>
+  </row>
+  <row>
+    <id>3</id>
+    <quote>If you love life, donâ€™t waste time, for time is what life is made up of.</quote>
+    <author>Bruce Lee</author>
+  </row>
+  <row>
+    <id>4</id>
+    <quote>Efficiency is doing things right; effectiveness is doing the right things.</quote>
+    <author>Peter Drucker</author>
+  </row>
+  <row>
+    <id>5</id>
+    <quote>Itâ€™s not knowing what to do, itâ€™s doing what you know.</quote>
+    <author>Tony Robbins</author>
+  </row>
+  <row>
+    <id>6</id>
+    <quote>Success breeds success.</quote>
+    <author>Proverb</author>
+  </row>
+  <row>
+    <id>7</id>
+    <quote>The perfect is the enemy of the good.</quote>
+    <author>Voltaire</author>
+  </row>
+  <row>
+    <id>8</id>
+    <quote>Words may show a manâ€™s wit but actions his meaning.</quote>
+    <author>Benjamin Franklin</author>
+  </row>
+  <row>
+    <id>9</id>
+    <quote>A small leak can sink a great ship.</quote>
+    <author>Benjamin Franklin</author>
+  </row>
+  <row>
+    <id>10</id>
+    <quote>Lost time is never found again.</quote>
+    <author>Benjamin Franklin</author>
+  </row>
+  <row>
+    <id>11</id>
+    <quote>You may delay, but time will not.</quote>
+    <author>Benjamin Franklin</author>
+  </row>
+  <row>
+    <id>12</id>
+    <quote>An ant on the move does more than a dozing ox.</quote>
+    <author>Lao Tzu</author>
+  </row>
+  <row>
+    <id>13</id>
+    <quote>Great acts are made up of small deeds.</quote>
+    <author>Lao Tzu</author>
+  </row>
+  <row>
+    <id>14</id>
+    <quote>The journey of a thousand miles begins with one step.</quote>
+    <author>Lao Tzu</author>
+  </row>
+  <row>
+    <id>15</id>
+    <quote>If you do not change direction, you may end up where you are heading.</quote>
+    <author>Lao Tzu</author>
+  </row>
+  <row>
+    <id>16</id>
+    <quote>The best way to predict the future is to create it.</quote>
+    <author>Alan Kay</author>
+  </row>
+  <row>
+    <id>17</id>
+    <quote>Everything comes to him who hustles while he waits.</quote>
+    <author>Thomas Edison</author>
+  </row>
+  <row>
+    <id>18</id>
+    <quote>I have not failed. Iâ€™ve just found 10,000 ways that wonâ€™t work.</quote>
+    <author>Thomas Edison</author>
+  </row>
+  <row>
+    <id>19</id>
+    <quote>If we did all the things we are capable of, we would literally astound ourselves.</quote>
+    <author>Thomas Edison</author>
+  </row>
+  <row>
+    <id>20</id>
+    <quote>Many of lifeâ€™s failures are people who did not realize how close they were to success when they gave up.</quote>
+    <author>Thomas Edison</author>
+  </row>
+  <row>
+    <id>21</id>
+    <quote>Show me a thoroughly satisfied man and I will show you a failure.</quote>
+    <author>Thomas Edison</author>
+  </row>
+  <row>
+    <id>22</id>
+    <quote>To have a great idea, have a lot of them.</quote>
+    <author>Thomas Edison</author>
+  </row>
+  <row>
+    <id>23</id>
+    <quote>Failure is the opportunity to begin again more intelligently.</quote>
+    <author>Henry Ford</author>
+  </row>
+  <row>
+    <id>24</id>
+    <quote>Our greatest glory is not in never failing, but in rising up every time we fail.</quote>
+    <author>Ralph Waldo Emerson</author>
+  </row>
+  <row>
+    <id>25</id>
+    <quote>Genius is one percent inspiration and ninety-nine percent perspiration.</quote>
+    <author>Thomas Edison</author>
+  </row>
+  <row>
+    <id>26</id>
+    <quote>The best thinking has been done in solitude. The worst has been done in turmoil.</quote>
+    <author>Thomas Edison</author>
+  </row>
+  <row>
+    <id>27</id>
+    <quote>The value of an idea lies in the using of it.</quote>
+    <author>Thomas Edison</author>
+  </row>
+  <row>
+    <id>28</id>
+    <quote>There is no substitute for hard work.</quote>
+    <author>Thomas Edison</author>
+  </row>
+  <row>
+    <id>29</id>
+    <quote>It is the working man who is the happy man. It is the idle man who is the miserable man.</quote>
+    <author>Ben Franklin</author>
+  </row>
+  <row>
+    <id>30</id>
+    <quote>Never leave that till tomorrow which you can do today.</quote>
+    <author>Ben Franklin</author>
+  </row>
+  <row>
+    <id>31</id>
+    <quote>I start where the last man left off.</quote>
+    <author>Thomas Edison</author>
+  </row>
+  <row>
+    <id>32</id>
+    <quote>Thereâ€™s a way to do it better â€“ find it.</quote>
+    <author>Thomas Edison</author>
+  </row>
+  <row>
+    <id>33</id>
+    <quote>Efficiency is doing better what is already being done.</quote>
+    <author>Peter Drucker</author>
+  </row>
+  <row>
+    <id>34</id>
+    <quote>Real artists ship.</quote>
+    <author>Steve Jobs</author>
+  </row>
+  <row>
+    <id>35</id>
+    <quote>Weâ€™re here to put a dent in the universe.</quote>
+    <author>Steve Jobs</author>
+  </row>
+  <row>
+    <id>36</id>
+    <quote>Iâ€™m as proud of what we donâ€™t do as I am of what we do.</quote>
+    <author>Steve Jobs</author>
+  </row>
+  <row>
+    <id>37</id>
+    <quote>Quality is more important than quantity. One home run is much better than two doubles.</quote>
+    <author>Steve Jobs</author>
+  </row>
+  <row>
+    <id>38</id>
+    <quote>Do you want to spend the rest of your life selling sugared water or do you want a chance to change the world?</quote>
+    <author>Steve Jobs</author>
+  </row>
+  <row>
+    <id>39</id>
+    <quote>Good artists borrow, great artists steal.</quote>
+    <author>Pablo Picasso</author>
+  </row>
+  <row>
+    <id>40</id>
+    <quote>The way I did it, every job was A+.</quote>
+    <author>Steve Wozniak</author>
+  </row>
+  <row>
+    <id>41</id>
+    <quote>You miss 100% of the shots you donâ€™t take.</quote>
+    <author>Wayne Gretzky</author>
+  </row>
+  <row>
+    <id>42</id>
+    <quote>The only way of finding the limits of the possible is by going beyond them into the impossible.</quote>
+    <author>Arthur C. Clarke</author>
+  </row>
+  <row>
+    <id>43</id>
+    <quote>We are what we repeatedly do. Excellence, therefore, is not an act but a habit.</quote>
+    <author>Aristotle</author>
+  </row>
+  <row>
+    <id>44</id>
+    <quote>Work spares us from three evils: boredom, vice, and need.</quote>
+    <author>Voltaire</author>
+  </row>
+  <row>
+    <id>45</id>
+    <quote>The best way out is always through.</quote>
+    <author>Robert Frost</author>
+  </row>
+  <row>
+    <id>46</id>
+    <quote>Nothing will ever be attempted if all possible objections must first be overcome.</quote>
+    <author>Samuel Johnson</author>
+  </row>
+  <row>
+    <id>47</id>
+    <quote>He who hesitates is lost.</quote>
+    <author>Proverb</author>
+  </row>
+  <row>
+    <id>48</id>
+    <quote>Nothing great was ever achieved without enthusiasm.</quote>
+    <author>Ralph Waldo Emerson</author>
+  </row>
+  <row>
+    <id>49</id>
+    <quote>The ability to convert ideas to things is the secret to outward success.</quote>
+    <author>Henry Ward Beecher</author>
+  </row>
+  <row>
+    <id>50</id>
+    <quote>A wise man will make more opportunities than he finds.</quote>
+    <author>Francis Bacon</author>
+  </row>
+  <row>
+    <id>51</id>
+    <quote>There is no happiness except in the realization that we have accomplished something.</quote>
+    <author>Henry Ford</author>
+  </row>
+  <row>
+    <id>52</id>
+    <quote>Who aims at excellence will be above mediocrity; who aims at mediocrity will be far short of it.</quote>
+    <author>Proverb</author>
+  </row>
+  <row>
+    <id>53</id>
+    <quote>Donâ€™t bunt. Aim out of the ballpark.</quote>
+    <author>David Ogilvy</author>
+  </row>
+  <row>
+    <id>54</id>
+    <quote>They always say time changes things, but you actually have to change them yourself.</quote>
+    <author>Andy Warhol</author>
+  </row>
+  <row>
+    <id>55</id>
+    <quote>Ambition should be made of sterner stuff.</quote>
+    <author>William Shakespeare</author>
+  </row>
+  <row>
+    <id>56</id>
+    <quote>Better three hours too soon than a minute too late.</quote>
+    <author>William Shakespeare</author>
+  </row>
+  <row>
+    <id>57</id>
+    <quote>I wasted time, and now doth time waste me.</quote>
+    <author>William Shakespeare</author>
+  </row>
+  <row>
+    <id>58</id>
+    <quote>Things done well and with a care, exempt themselves from fear.</quote>
+    <author>William Shakespeare</author>
+  </row>
+  <row>
+    <id>59</id>
+    <quote>A pessimist sees the difficulty in every opportunity; an optimist sees the opportunity in every difficulty.</quote>
+    <author>Winston Churchill</author>
+  </row>
+  <row>
+    <id>60</id>
+    <quote>Continuous effort - not strength or intelligence - is the key to unlocking our potential.</quote>
+    <author>Winston Churchill</author>
+  </row>
+  <row>
+    <id>61</id>
+    <quote>I am easily satisfied with the very best.</quote>
+    <author>Winston Churchill</author>
+  </row>
+  <row>
+    <id>62</id>
+    <quote>A superior man is modest in his speech, but exceeds in his actions.</quote>
+    <author>Confucius</author>
+  </row>
+  <row>
+    <id>63</id>
+    <quote>It does not matter how slowly you go as long as you do not stop.</quote>
+    <author>Confucius</author>
+  </row>
+  <row>
+    <id>64</id>
+    <quote>When it is obvious that the goals cannot be reached, donâ€™t adjust the goals, adjust the steps.</quote>
+    <author>Confucius</author>
+  </row>
+  <row>
+    <id>65</id>
+    <quote>Wherever you go, go with all your heart.</quote>
+    <author>Confucius</author>
+  </row>
+  <row>
+    <id>66</id>
+    <quote>A jug fills drop by drop.</quote>
+    <author>Buddha</author>
+  </row>
+  <row>
+    <id>67</id>
+    <quote>I never see what has been done; I only see what remains to be done.</quote>
+    <author>Buddha</author>
+  </row>
+  <row>
+    <id>68</id>
+    <quote>There are only two mistakes one can make along the road to truth; not going all the way, and not starting.</quote>
+    <author>Buddha</author>
+  </row>
+  <row>
+    <id>69</id>
+    <quote>To be idle is a short road to death and to be diligent is a way of life.</quote>
+    <author>Buddha</author>
+  </row>
+  <row>
+    <id>70</id>
+    <quote>A person who never made a mistake never tried anything new.</quote>
+    <author>Albert Einstein</author>
+  </row>
+  <row>
+    <id>71</id>
+    <quote>I have no special talent. I am only passionately curious.</quote>
+    <author>Albert Einstein</author>
+  </row>
+  <row>
+    <id>72</id>
+    <quote>Make everything as simple as possible, but not simpler.</quote>
+    <author>Albert Einstein</author>
+  </row>
+  <row>
+    <id>73</id>
+    <quote>If you want a thing done well, do it yourself.</quote>
+    <author>Napoleon Bonaparte</author>
+  </row>
+  <row>
+    <id>74</id>
+    <quote>Take time to deliberate, but when the time for action has arrived, stop thinking and go in.</quote>
+    <author>Napoleon Bonaparte</author>
+  </row>
+  <row>
+    <id>75</id>
+    <quote>The word impossible is not in my dictionary.</quote>
+    <author>Napoleon Bonaparte</author>
+  </row>
+  <row>
+    <id>76</id>
+    <quote>Victory belongs to the most persevering.</quote>
+    <author>Napoleon Bonaparte</author>
+  </row>
+  <row>
+    <id>77</id>
+    <quote>You sort of start thinking anythingâ€™s possible if youâ€™ve got enough nerve.</quote>
+    <author>J. K. Rowling</author>
+  </row>
+  <row>
+    <id>78</id>
+    <quote>Itâ€™s not the size of the dog in the fight, itâ€™s the size of the fight in the dog.</quote>
+    <author>Mark Twain</author>
+  </row>
+  <row>
+    <id>79</id>
+    <quote>There are people who accomplish things, and people who claim to have accomplished things. The first group is less crowded.</quote>
+    <author>Mark Twain</author>
+  </row>
+  <row>
+    <id>80</id>
+    <quote>Doing the best at this moment puts you in the best place for the next moment.</quote>
+    <author>Oprah Winfrey</author>
+  </row>
+  <row>
+    <id>81</id>
+    <quote>I feel that luck is preparation meeting opportunity.</quote>
+    <author>Oprah Winfrey</author>
+  </row>
+  <row>
+    <id>82</id>
+    <quote>Itâ€™s lack of faith that makes people afraid of meeting challenges, and I believed in myself.</quote>
+    <author>Muhammad Ali</author>
+  </row>
+  <row>
+    <id>83</id>
+    <quote>Do, or do not. There is no try.</quote>
+    <author>Yoda</author>
+  </row>
+  <row>
+    <id>84</id>
+    <quote>Your time is limited, so donâ€™t waste it living someone elseâ€™s life.</quote>
+    <author>Steve Jobs</author>
+  </row>
+  <row>
+    <id>85</id>
+    <quote>All great achievements require time.</quote>
+    <author>Maya Angelou</author>
+  </row>
+  <row>
+    <id>86</id>
+    <quote>Nothing will work unless you do.</quote>
+    <author>Maya Angelou</author>
+  </row>
+  <row>
+    <id>87</id>
+    <quote>I can accept failure, everyone fails at something. But I canâ€™t accept not trying.</quote>
+    <author>Michael Jordan</author>
+  </row>
+  <row>
+    <id>88</id>
+    <quote>I play to win, whether during practice or a real game.</quote>
+    <author>Michael Jordan</author>
+  </row>
+  <row>
+    <id>89</id>
+    <quote>Iâ€™ve failed over and over and over again in my life and that is why I succeed.</quote>
+    <author>Michael Jordan</author>
+  </row>
+  <row>
+    <id>90</id>
+    <quote>Some people want it to happen, some wish it would happen, others make it happen.</quote>
+    <author>Michael Jordan</author>
+  </row>
+  <row>
+    <id>91</id>
+    <quote>All our dreams can come true, if we have the courage to pursue them.</quote>
+    <author>Walt Disney</author>
+  </row>
+  <row>
+    <id>92</id>
+    <quote>Itâ€™s kind of fun to do the impossible.</quote>
+    <author>Walt Disney</author>
+  </row>
+  <row>
+    <id>93</id>
+    <quote>The way to get started is to quit talking and begin doing.</quote>
+    <author>Walt Disney</author>
+  </row>
+  <row>
+    <id>94</id>
+    <quote>When youâ€™re curious, you find lots of interesting things to do.</quote>
+    <author>Walt Disney</author>
+  </row>
+  <row>
+    <id>95</id>
+    <quote>At the age of six I wanted to be a cook. At seven I wanted to be Napoleon. And my ambition has been growing steadily ever since.</quote>
+    <author>Salvador Dali</author>
+  </row>
+  <row>
+    <id>96</id>
+    <quote>Have no fear of perfection - youâ€™ll never reach it.</quote>
+    <author>Salvador Dali</author>
+  </row>
+  <row>
+    <id>97</id>
+    <quote>I confess that in 1901 I said to my brother Orville that man would not fly for fifty years.</quote>
+    <author>Wilbur Wright</author>
+  </row>
+  <row>
+    <id>98</id>
+    <quote>I do not want to waste any time. And if you are not working on important things, you are wasting time.</quote>
+    <author>Dean Kamen</author>
+  </row>
+  <row>
+    <id>99</id>
+    <quote>If Iâ€™d observed all the rules, Iâ€™d never have got anywhere.</quote>
+    <author>Marilyn Monroe</author>
+  </row>
+  <row>
+    <id>100</id>
+    <quote>It is often easier to ask for forgiveness than to ask for permission.</quote>
+    <author>Grace Hopper</author>
+  </row>
+  <row>
+    <id>101</id>
+    <quote>I donâ€™t know where Iâ€™m going, but Iâ€™m on my way.</quote>
+    <author>Carl Sagan</author>
+  </row>
+  <row>
+    <id>102</id>
+    <quote>Imagination will often carry us to worlds that never wereâ€¦ but without it, we go nowhere.</quote>
+    <author>Carl Sagan</author>
+  </row>
+  <row>
+    <id>103</id>
+    <quote>A man who dares to waste one hour of time has not discovered the value of life.</quote>
+    <author>Charles Darwin</author>
+  </row>
+  <row>
+    <id>104</id>
+    <quote>Begin at the beginning and go on till you come to the end; then stop.</quote>
+    <author>Lewis Carroll</author>
+  </row>
+  <row>
+    <id>105</id>
+    <quote>Action will delineate and define you.</quote>
+    <author>Thomas Jefferson</author>
+  </row>
+  <row>
+    <id>106</id>
+    <quote>I can, therefore I am.</quote>
+    <author>Simone Weil</author>
+  </row>
+  <row>
+    <id>107</id>
+    <quote>If you want to succeed, strike out on new paths rather than travel the worn paths of accepted success.</quote>
+    <author>John D. Rockefeller</author>
+  </row>
+  <row>
+    <id>108</id>
+    <quote>The harder the conflict, the more glorious the triumph.</quote>
+    <author>Thomas Paine</author>
+  </row>
+  <row>
+    <id>109</id>
+    <quote>Things do not happen. Things are made to happen.</quote>
+    <author>John F. Kennedy</author>
+  </row>
+  <row>
+    <id>110</id>
+    <quote>You are never too old to set another goal or to dream a new dream.</quote>
+    <author>C. S. Lewis</author>
+  </row>
+  <row>
+    <id>111</id>
+    <quote>You can never quit. Winners never quit, and quitters never win.</quote>
+    <author>Ted Turner</author>
+  </row>
+  <row>
+    <id>112</id>
+    <quote>You canâ€™t wait for inspiration. You have to go after it with a club.</quote>
+    <author>Jack London</author>
+  </row>
+  <row>
+    <id>113</id>
+    <quote>I dream for a living.</quote>
+    <author>Steven Spielberg</author>
+  </row>
+  <row>
+    <id>114</id>
+    <quote>We must use time creatively.</quote>
+    <author>Martin Luther King, Jr.</author>
+  </row>
+  <row>
+    <id>115</id>
+    <quote>Whatever your lifeâ€™s work is, do it well.</quote>
+    <author>Martin Luther King, Jr.</author>
+  </row>
+  <row>
+    <id>116</id>
+    <quote>Donâ€™t spend time beating on a wall, hoping to transform it into a door.</quote>
+    <author>Coco Chanel</author>
+  </row>
+  <row>
+    <id>117</id>
+    <quote>Success is often achieved by those who donâ€™t know that failure is inevitable.</quote>
+    <author>Coco Chanel</author>
+  </row>
+  <row>
+    <id>118</id>
+    <quote>Itâ€™s very easy to be different, but very difficult to be better.</quote>
+    <author>Jonathan Ive</author>
+  </row>
+  <row>
+    <id>119</id>
+    <quote>I skate to where the puck is going to be, not where it has been.</quote>
+    <author>Wayne Gretzky</author>
+  </row>
+  <row>
+    <id>120</id>
+    <quote>To infinity and beyond!</quote>
+    <author>Buzz Lightyear</author>
+  </row>
+  <row>
+    <id>121</id>
+    <quote>Make it work.</quote>
+    <author>Tim Gunn</author>
+  </row>
+  <row>
+    <id>122</id>
+    <quote>For every dark night, thereâ€™s a brighter day.</quote>
+    <author>Tupac Shakur</author>
+  </row>
+  <row>
+    <id>123</id>
+    <quote>During your life, never stop dreaming. No one can take away your dreams.</quote>
+    <author>Tupac Shakur</author>
+  </row>
+  <row>
+    <id>124</id>
+    <quote>A change in perspective is worth 80 IQ points.</quote>
+    <author>Alan Kay</author>
+  </row>
+  <row>
+    <id>125</id>
+    <quote>What we learn from history is that people donâ€™t learn from history.</quote>
+    <author>Warren Buffett</author>
+  </row>
+  <row>
+    <id>126</id>
+    <quote>Iâ€™ve got a theory that if you give 100% all the time, somehow things will work out in the end.</quote>
+    <author>Larry Bird</author>
+  </row>
+  <row>
+    <id>127</id>
+    <quote>Nothing in life is to be feared. It is only to be understood.</quote>
+    <author>Marie Curie</author>
+  </row>
+  <row>
+    <id>128</id>
+    <quote>If everyone is thinking alike then somebody isnâ€™t thinking.</quote>
+    <author>George Patton</author>
+  </row>
+  <row>
+    <id>129</id>
+    <quote>Yesterday is gone. Tomorrow has not yet come. We have only today. Let us begin.</quote>
+    <author>Mother Teresa</author>
+  </row>
+  <row>
+    <id>130</id>
+    <quote>An idea that is not dangerous is unworthy of being called an idea at all.</quote>
+    <author>Oscar Wilde</author>
+  </row>
+  <row>
+    <id>131</id>
+    <quote>I hated every minute of training, but I said, â€˜Donâ€™t quit. Suffer now and live the rest of your life as a championâ€™.</quote>
+    <author>Muhammad Ali</author>
+  </row>
+  <row>
+    <id>132</id>
+    <quote>A champion is someone who gets up when he canâ€™t.</quote>
+    <author>Jack Dempsey</author>
+  </row>
+  <row>
+    <id>133</id>
+    <quote>Clear eyes. Full hearts. Canâ€™t lose.</quote>
+    <author>Peter Berg</author>
+  </row>
+  <row>
+    <id>134</id>
+    <quote>Plato is my friend â€” Aristotle is my friend â€” but my greatest friend is truth.</quote>
+    <author>Isaac Newton</author>
+  </row>
+  <row>
+    <id>135</id>
+    <quote>If I have seen further it is by standing on the shoulders of giants.</quote>
+    <author>Isaac Newton</author>
+  </row>
+  <row>
+    <id>136</id>
+    <quote>Truth is ever to be found in simplicity, and not in the multiplicity and confusion of things.</quote>
+    <author>Isaac Newton</author>
+  </row>
+  <row>
+    <id>137</id>
+    <quote>I have a limited intelligence and Iâ€™ve used it in a particular direction.</quote>
+    <author>Richard Feynman</author>
+  </row>
+  <row>
+    <id>138</id>
+    <quote>Everything is interesting if you go into it deeply enough.</quote>
+    <author>Richard Feynman</author>
+  </row>
+  <row>
+    <id>139</id>
+    <quote>I should not proceed by land to the East, as is customary, but by a Westerly route, in which direction we have hitherto no certain evidence that any one has gone.</quote>
+    <author>Christopher Columbus</author>
+  </row>
+  <row>
+    <id>140</id>
+    <quote>I steal from every movie ever made.</quote>
+    <author>Quentin Tarantino</author>
+  </row>
+  <row>
+    <id>141</id>
+    <quote>I want to top expectations. I want to blow you away.</quote>
+    <author>Quentin Tarantino</author>
+  </row>
+  <row>
+    <id>142</id>
+    <quote>A busy life is a wasted life.</quote>
+    <author>Francis Crick</author>
+  </row>
+  <row>
+    <id>143</id>
+    <quote>I thought Star Wars was too wacky for the general public.</quote>
+    <author>George Lucas</author>
+  </row>
+  <row>
+    <id>144</id>
+    <quote>I do not fear computers. I fear the lack of them.</quote>
+    <author>Isaac Asimov</author>
+  </row>
+  <row>
+    <id>145</id>
+    <quote>The true delight is in the finding out rather than in the knowing.</quote>
+    <author>Isaac Asimov</author>
+  </row>
+  <row>
+    <id>146</id>
+    <quote>You donâ€™t learn to walk by following rules. You learn by doing, and by falling over.</quote>
+    <author>Richard Branson</author>
+  </row>
+  <row>
+    <id>147</id>
+    <quote>Video games are bad for you? Thatâ€™s what they said about rock-n-roll.</quote>
+    <author>Shigeru Miyamoto</author>
+  </row>
+  <row>
+    <id>148</id>
+    <quote>I wanted to make something very unique, something very different.</quote>
+    <author>Shigeru Miyamoto</author>
+  </row>
+  <row>
+    <id>149</id>
+    <quote>Focus is a matter of deciding what things youâ€™re not going to do.</quote>
+    <author>John Carmack</author>
+  </row>
+  <row>
+    <id>150</id>
+    <quote>Itâ€™s important to have a feedback loop, where youâ€™re constantly thinking about what youâ€™ve done and how you could be doing it better.</quote>
+    <author>Elon Musk</author>
+  </row>
+  <row>
+    <id>151</id>
+    <quote>Creativity is allowing yourself to make mistakes. Art is knowing which ones to keep.</quote>
+    <author>Scott Adams</author>
+  </row>
+  <row>
+    <id>152</id>
+    <quote>The problem with the future is that it keeps turning into the present.</quote>
+    <author>Bill Watterson</author>
+  </row>
+  <row>
+    <id>153</id>
+    <quote>Every child is an artist. The problem is how to remain an artist once we grow up.</quote>
+    <author>Pablo Picasso</author>
+  </row>
+  <row>
+    <id>154</id>
+    <quote>I donâ€™t paint things. I only paint the difference between things.</quote>
+    <author>Henri Matisse</author>
+  </row>
+  <row>
+    <id>155</id>
+    <quote>Veni, vidi, vici.</quote>
+    <author>Julius Caesar</author>
+  </row>
+  <row>
+    <id>156</id>
+    <quote>If you donâ€™t like what youâ€™re doing, then donâ€™t do it.</quote>
+    <author>Ray Bradbury</author>
+  </row>
+  <row>
+    <id>157</id>
+    <quote>Stuff your eyes with wonder, live as if youâ€™d drop dead in ten seconds. See the world.</quote>
+    <author>Ray Bradbury</author>
+  </row>
+  <row>
+    <id>158</id>
+    <quote>We are an impossibility in an impossible universe.</quote>
+    <author>Ray Bradbury</author>
+  </row>
+  <row>
+    <id>159</id>
+    <quote>Youâ€™ve got to jump off cliffs and build your wings on the way down.</quote>
+    <author>Ray Bradbury</author>
+  </row>
+  <row>
+    <id>160</id>
+    <quote>Time would become meaningless if there were too much of it.</quote>
+    <author>Ray Kurzweil</author>
+  </row>
+  <row>
+    <id>161</id>
+    <quote>Musicians donâ€™t retire; they stop when thereâ€™s no more music in them.</quote>
+    <author>Louis Armstrong</author>
+  </row>
+  <row>
+    <id>162</id>
+    <quote>What we play is life.</quote>
+    <author>Louis Armstrong</author>
+  </row>
+  <row>
+    <id>163</id>
+    <quote>Serenity now!</quote>
+    <author>George Costanza</author>
+  </row>
+  <row>
+    <id>164</id>
+    <quote>Goonies never say die!</quote>
+    <author>Mikey Walsh</author>
+  </row>
+  <row>
+    <id>165</id>
+    <quote>May the Force be with you.</quote>
+    <author>Han Solo</author>
+  </row>
+  <row>
+    <id>166</id>
+    <quote>Carpe diem, seize the day boys, make your lives extraordinary.</quote>
+    <author>John Keating</author>
+  </row>
+  <row>
+    <id>167</id>
+    <quote>Without pain, without sacrifice, we would have nothing.</quote>
+    <author>Tyler Durden</author>
+  </row>
+  <row>
+    <id>168</id>
+    <quote>Thereâ€™s a difference between knowing the path and walking the path.</quote>
+    <author>Morpheus</author>
+  </row>
+  <row>
+    <id>169</id>
+    <quote>I saw the angel in the marble and carved until I set him free.</quote>
+    <author>Michelangelo</author>
+  </row>
+  <row>
+    <id>170</id>
+    <quote>You donâ€™t get another chance. Life is no Nintendo game.</quote>
+    <author>Eminem</author>
+  </row>
+  <row>
+    <id>171</id>
+    <quote>Youâ€™ve got enemies? Good. That means you actually stood up for something in your life.</quote>
+    <author>Eminem</author>
+  </row>
+  <row>
+    <id>172</id>
+    <quote>Amateurs practice until they get it right. Professionals practice until they canâ€™t get it wrong.</quote>
+    <author>Unknown</author>
+  </row>
+  <row>
+    <id>173</id>
+    <quote>No matter how far youâ€™ve gone down a wrong road, you can always turn back.</quote>
+    <author>Proverb</author>
+  </row>
+  <row>
+    <id>174</id>
+    <quote>Live long and prosper.</quote>
+    <author>Spock</author>
+  </row>
+  <row>
+    <id>175</id>
+    <quote>Simplify, simplify, simplify.</quote>
+    <author>Henry David Thoreau</author>
+  </row>
+  <row>
+    <id>176</id>
+    <quote>It is not enough to be industrious; so are the ants. What are you industrious about?</quote>
+    <author>Henry David Thoreau</author>
+  </row>
+  <row>
+    <id>177</id>
+    <quote>One can have no smaller or greater mastery than mastery of oneself.</quote>
+    <author>Leonardo da Vinci</author>
+  </row>
+  <row>
+    <id>178</id>
+    <quote>I pay no attention whatever to anybodyâ€™s praise or blame. I simply follow my own feelings.</quote>
+    <author>Wolfgang Amadeus Mozart</author>
+  </row>
+  <row>
+    <id>179</id>
+    <quote>Lifeâ€™s like a movie, write your own endingâ€¦</quote>
+    <author>Kermit the Frog</author>
+  </row>
+  <row>
+    <id>180</id>
+    <quote>HULK SMASH!</quote>
+    <author>The Incredible Hulk</author>
+  </row>
+  <row>
+    <id>181</id>
+    <quote>Make it so.</quote>
+    <author>Jean-Luc Picard</author>
+  </row>
+  <row>
+    <id>182</id>
+    <quote>A life spent making mistakes is not only more honorable, but more useful than a life spent doing nothing.</quote>
+    <author>George Bernard Shaw</author>
+  </row>
+  <row>
+    <id>183</id>
+    <quote>When I was young I observed that nine out of every ten things I did were failures, so I did ten times more work.</quote>
+    <author>George Bernard Shaw</author>
+  </row>
+  <row>
+    <id>184</id>
+    <quote>Time stays long enough for anyone who will use it.</quote>
+    <author>Leonardo da Vinci</author>
+  </row>
+  <row>
+    <id>185</id>
+    <quote>Simplicity is the ultimate sophistication.</quote>
+    <author>Leonardo da Vinci</author>
+  </row>
+  <row>
+    <id>186</id>
+    <quote>Practice isnâ€™t the thing you do when youâ€™re good. Itâ€™s the thing you do that makes you good.</quote>
+    <author>Malcolm Gladwell</author>
+  </row>
+  <row>
+    <id>187</id>
+    <quote>Sometimes magic is just someone spending more time on something than anyone else might reasonably expect.</quote>
+    <author>Teller</author>
+  </row>
+  <row>
+    <id>188</id>
+    <quote>Once you make a decision, the universe conspires to make it happen.</quote>
+    <author>Ralph Waldo Emerson</author>
+  </row>
+  <row>
+    <id>189</id>
+    <quote>To whom much is given, much is expected.</quote>
+    <author>John F. Kennedy</author>
+  </row>
+  <row>
+    <id>190</id>
+    <quote>How can you quit now when weâ€™re so near the end!</quote>
+    <author>Prof. Henry Jones</author>
+  </row>
+  <row>
+    <id>191</id>
+    <quote>Roads? Where weâ€™re going, we donâ€™t need roads.</quote>
+    <author>Dr. Emmett Brown</author>
+  </row>
+  <row>
+    <id>192</id>
+    <quote>Adults are obsolete children.</quote>
+    <author>Dr. Seuss</author>
+  </row>
+  <row>
+    <id>193</id>
+    <quote>Fun is good.</quote>
+    <author>Dr. Seuss</author>
+  </row>
+  <row>
+    <id>194</id>
+    <quote>Do things that have never been done before.</quote>
+    <author>Russell Kirsch</author>
+  </row>
+  <row>
+    <id>195</id>
+    <quote>When you stop doing things for fun, you might as well be dead.</quote>
+    <author>Ernest Hemingway</author>
+  </row>
+  <row>
+    <id>196</id>
+    <quote>I mean, itâ€™s impossible. But thatâ€™s exactly what weâ€™ve tried to do.</quote>
+    <author>Jonathan Ive</author>
+  </row>
+  <row>
+    <id>197</id>
+    <quote>Yesterday is history, tomorrow is a mystery, today is a giftâ€¦ which is why we call it the present.</quote>
+    <author>Bil Keane</author>
+  </row>
+  <row>
+    <id>198</id>
+    <quote>Dreams are extremely important. You canâ€™t do it unless you imagine it.</quote>
+    <author>George Lucas</author>
+  </row>
+  <row>
+    <id>199</id>
+    <quote>The world fascinates me.</quote>
+    <author>Andy Warhol</author>
+  </row>
+  <row>
+    <id>200</id>
+    <quote>There is an artâ€¦ to flying. It lies in learning how to throw yourself at the ground and miss.</quote>
+    <author>Douglas Adams</author>
+  </row>
+  <row>
+    <id>201</id>
+    <quote>Education is what is left after one has forgotten everything he learned in school.</quote>
+    <author>Albert Einstein</author>
+  </row>
+  <row>
+    <id>202</id>
+    <quote>However vast the darkness, we must supply our own light.</quote>
+    <author>Stanley Kubrick</author>
+  </row>
+  <row>
+    <id>203</id>
+    <quote>This isnâ€™t flying â€“ this is falling with style!</quote>
+    <author>Buzz Lightyear</author>
+  </row>
+  <row>
+    <id>204</id>
+    <quote>You canâ€™t depend on your eyes when your imagination is out of focus.</quote>
+    <author>Mark Twain</author>
+  </row>
+  <row>
+    <id>205</id>
+    <quote>That which does not kill us makes us stronger.</quote>
+    <author>Friedrich Nietzsche</author>
+  </row>
+  <row>
+    <id>206</id>
+    <quote>It is better to light a candle than curse the darkness.</quote>
+    <author>Chinese Proverb</author>
+  </row>
+  <row>
+    <id>207</id>
+    <quote>He who asks a question is a fool for five minutes; he who does not ask a question remains a fool forever.</quote>
+    <author>Chinese Proverb</author>
+  </row>
+  <row>
+    <id>208</id>
+    <quote>A lot of times, people donâ€™t know what they want until you show it to them.</quote>
+    <author>Steve Jobs</author>
+  </row>
+  <row>
+    <id>209</id>
+    <quote>Stay hungry, stay foolish.</quote>
+    <author>Steve Jobs</author>
+  </row>
+  <row>
+    <id>210</id>
+    <quote>Itâ€™s not just what it looks like and feels like. Design is how it works.</quote>
+    <author>Steve Jobs</author>
+  </row>
+  <row>
+    <id>211</id>
+    <quote>Thatâ€™s one small step for man, one giant leap for mankind.</quote>
+    <author>Neil Armstrong</author>
+  </row>
+  <row>
+    <id>212</id>
+    <quote>I was born not knowing and have had only a little time to change that here and there.</quote>
+    <author>Richard Feynman</author>
+  </row>
+  <row>
+    <id>213</id>
+    <quote>Who would say that pleasure is not useful?</quote>
+    <author>Charles Eames</author>
+  </row>
+  <row>
+    <id>214</id>
+    <quote>Books and movies are never finished, only surrendered.</quote>
+    <author>Chuck Hogan</author>
+  </row>
+  <row>
+    <id>215</id>
+    <quote>Donâ€™t be arrogant, because arrogance kills curiosity and passion.</quote>
+    <author>Mina Bissell</author>
+  </row>
+  <row>
+    <id>216</id>
+    <quote>Our lives are the sum of our memories. How much are we willing to lose from our already short lives byâ€¦ not paying attention?</quote>
+    <author>Joshua Foer</author>
+  </row>
+</root>
