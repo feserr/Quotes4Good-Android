@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">Quotes4Good</string>
+
+    <string name="action_settings">Propiedades</string>
+    <string name="action_share">Compartir</string>
+
+    <!-- Preferences -->
+    <string name="title_activity_settings">Propiedades</string>
+
+    <!-- Label for the location preference [CHAR LIMIT=60] -->
+    <string name="pref_time_notification_label">Intevalo de notificaciones</string>
+
+    <!-- Key name for storing location in SharedPreferences [CHAR LIMIT=NONE] -->
+    <string name="pref_time_notification_key" translatable="false">time_notification</string>
+
+    <!-- Default postal code for location preference [CHAR LIMIT=NONE] -->
+    <string name="pref_time_notification_default" translatable="false">60</string>
+
+    <string name="second_name">segundos</string>
+    <!-- End preferences -->
+
+    <!-- Layouts -->
+    <!-- fragment_main -->
+    <string name="quote">"Hello world!"</string>
+    <string name="author">Computer</string>
+    <!-- End layouts -->
+
+    <!-- Notification -->
+    <string name="get_another">Otra cita</string>
 </resources>
