@@ -6,6 +6,7 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -13,10 +14,10 @@ import android.support.v4.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import android.support.v7.widget.ShareActionProvider;
+import android.view.*;
 import android.widget.TextView;
 import org.xmlpull.v1.XmlPullParserException;
 
@@ -36,6 +37,11 @@ public class QuotesFragment extends Fragment implements
     private static final String ANOTHER_ACTION = "Another";
     private final String TAG = "QuotesFragment";
 
+    private static final String QUOTES_SHARE_HASHTAG = " #Quotes4Good";
+    private String mQuote;
+
+    private ShareActionProvider mShareActionProvider;
+
     private Context activityContext = null;
     private SwipeRefreshLayout mSwipeRefreshLayout = null;
     private NotificationManager notificationManager = null;
@@ -48,7 +54,9 @@ public class QuotesFragment extends Fragment implements
 
     private List listQuotes = null;
     private Random rand = null;
-    private Row actualRow = null;
+    private static Row actualRow = null;
+
+    private static BroadcastReceiver mReceiver;
 
     public class UpdateQuote extends AsyncTask<Void, Void, Void> {
         Row row = null;
@@ -83,19 +91,8 @@ public class QuotesFragment extends Fragment implements
         }
     }
 
-    public class switchButtonListener extends BroadcastReceiver {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            String action = intent.getAction();
-
-            if(ANOTHER_ACTION.equals(action)) {
-                Row row = getNewQuote();
-                changeNotification(row);
-            }
-        }
-    }
-
     public QuotesFragment() {
+        setHasOptionsMenu(true);
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -133,25 +130,72 @@ public class QuotesFragment extends Fragment implements
             e.printStackTrace();
         }
 
-        // Get a randon row
-        actualRow = (Row) listQuotes.get(rand.nextInt(listQuotes.size()));
-
         // Get quotes textviews
         quoteView = (TextView) rootView.findViewById(R.id.quote);
         authorView = (TextView) rootView.findViewById(R.id.author);
 
-        changeMainQuote();
+        // Get a randon row
+        if (actualRow == null) {
+            actualRow = (Row) listQuotes.get(rand.nextInt(listQuotes.size()));
+
+            changeMainQuote();
+        }
 
         makeNotification(activityContext);
         changeNotification(actualRow);
+
+        IntentFilter filter = new IntentFilter();
+        filter.addAction(ANOTHER_ACTION);
+        mReceiver = new BroadcastReceiver() {
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                if (intent.getAction().equals(ANOTHER_ACTION)) {
+                    actualRow = getNewQuote();
+                    changeNotification(actualRow);
+                    changeMainQuote();
+                }
+            }
+        };
+
+        activityContext.registerReceiver(mReceiver, filter);
 
         return rootView;
     }
 
     @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        inflater.inflate(R.menu.menu_main, menu);
+
+        // Retrieve the share menu item
+        MenuItem menuItem = menu.findItem(R.id.menu_item_share);
+
+        // Get the provider and hold onto it to set/change the share intent.
+        mShareActionProvider = (ShareActionProvider) MenuItemCompat.getActionProvider(menuItem);
+
+        // We still need this for the share intent
+        mQuote = String.format("\"%s\" - %s", actualRow.quote, actualRow.author);
+
+        // If onLoadFinished happens before this, we can go ahead and set the share intent now.
+        if (mQuote != null) {
+            mShareActionProvider.setShareIntent(createShareQuoteIntent());
+        }
+    }
+
+    private Intent createShareQuoteIntent() {
+        Intent shareIntent = new Intent(Intent.ACTION_SEND);
+        shareIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
+        shareIntent.setType("text/plain");
+        shareIntent.putExtra(Intent.EXTRA_TEXT, mQuote);
+        return shareIntent;
+    }
+
+    @Override
     public void onResume() {
         super.onResume();
-        changeMainQuote();
+
+        if (actualRow != null)
+            changeMainQuote();
     }
 
     @Override
@@ -181,11 +225,16 @@ public class QuotesFragment extends Fragment implements
     }
 
     private void changeMainQuote() {
-        // Set quote
-        quoteView.setText("\"" + actualRow.quote + "\"");
+        if (actualRow != null) {
+            // Set quote
+            quoteView.setText("\"" + actualRow.quote + "\"");
 
-        // Set author
-        authorView.setText("-" + actualRow.author);
+            // Set author
+            authorView.setText("-" + actualRow.author);
+
+            // We still need this for the share intent
+            mQuote = String.format("\"%sª\" - %s", actualRow.quote, actualRow.author);
+        }
     }
 
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
@@ -195,10 +244,15 @@ public class QuotesFragment extends Fragment implements
         PendingIntent pendingIntent = PendingIntent.getActivity(context,
                 NOTIFICATION_ID, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 
-        Intent anotherReceive = new Intent(context, switchButtonListener.class);
-        anotherReceive.setAction(ANOTHER_ACTION);
-        PendingIntent pendingIntentAnother = PendingIntent.getBroadcast(context, NOTIFICATION_ID, anotherReceive,
-                PendingIntent.FLAG_UPDATE_CURRENT);
+        Intent anotherReceive = new Intent(ANOTHER_ACTION);
+        PendingIntent pendingIntentAnother = PendingIntent.getBroadcast(context, NOTIFICATION_ID, anotherReceive, 0);
+
+        Intent sendIntent = new Intent();
+        sendIntent.setAction(Intent.ACTION_SEND);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, mQuote);
+        sendIntent.setType("text/plain");
+        PendingIntent pendingIntentShare = PendingIntent.getActivity(context, NOTIFICATION_ID,
+                Intent.createChooser(sendIntent, getString(R.string.share)), PendingIntent.FLAG_UPDATE_CURRENT);
 
         notificationBuilder = new NotificationCompat.Builder(context)
                 .setContentTitle("Quotes4Good")
@@ -212,7 +266,9 @@ public class QuotesFragment extends Fragment implements
                 .setStyle(new NotificationCompat.BigTextStyle()
                         .bigText("Test"))
                 .addAction (R.mipmap.ic_launcher,
-                        getString(R.string.get_another), pendingIntentAnother);
+                        getString(R.string.get_another), pendingIntentAnother)
+                .addAction (R.mipmap.ic_launcher,
+                        getString(R.string.share), pendingIntentShare);
 
         quoteNotification = notificationBuilder.build();
 
@@ -230,7 +286,5 @@ public class QuotesFragment extends Fragment implements
         quoteNotification = notificationBuilder.build();
         quoteNotification.flags |= Notification.FLAG_NO_CLEAR | Notification.FLAG_ONGOING_EVENT;
         notificationManager.notify(NOTIFICATION_ID, quoteNotification);
-
     }
-
 }

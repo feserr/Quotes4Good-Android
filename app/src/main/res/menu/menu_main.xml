@@ -6,4 +6,9 @@
           android:title="@string/action_settings"
           android:orderInCategory="100"
           app:showAsAction="never" />
+    <item
+            android:id="@+id/menu_item_share"
+            android:title="@string/share"
+            app:showAsAction="always"
+            app:actionProviderClass="android.support.v7.widget.ShareActionProvider" />
 </menu>

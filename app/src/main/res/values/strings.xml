@@ -27,4 +27,5 @@
 
     <!-- Notification -->
     <string name="get_another">Otra cita</string>
+    <string name="share">Compartir</string>
 </resources>
