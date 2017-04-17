@@ -261,13 +261,13 @@ public class QuotesFragment extends Fragment implements
                 .setOngoing(true)
                 .setPriority(Notification.PRIORITY_MIN)
                 .setContentIntent(pendingIntent)
-                .setSmallIcon(R.mipmap.ic_launcher)
-                .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
+                .setSmallIcon(R.drawable.ic_quotes_launcher)
+                .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.ic_quotes_launcher))
                 .setStyle(new NotificationCompat.BigTextStyle()
                         .bigText("Test"))
-                .addAction (R.mipmap.ic_launcher,
+                .addAction (R.drawable.ic_next_quotes,
                         getString(R.string.get_another), pendingIntentAnother)
-                .addAction (R.mipmap.ic_launcher,
+                .addAction (R.drawable.ic_share_quote,
                         getString(R.string.share), pendingIntentShare);
 
         quoteNotification = notificationBuilder.build();
