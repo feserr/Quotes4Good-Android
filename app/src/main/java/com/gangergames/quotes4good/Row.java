@@ -17,6 +17,12 @@ public class Row {
     public final String quote;
     public final String author;
 
+    public Row() {
+        this.id = "";
+        this.quote = "";
+        this.author = "";
+    }
+
     public Row(String id, String quote, String author) {
         this.id = id;
         this.quote = quote;

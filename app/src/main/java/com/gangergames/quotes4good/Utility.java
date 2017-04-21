@@ -1,12 +1,13 @@
 package com.gangergames.quotes4good;
 
+import android.content.Context;
+import android.os.Build;
 import android.util.Log;
 import android.util.Xml;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -136,5 +137,61 @@ public class Utility {
                     break;
             }
         }
+    }
+
+    public static void writeToFile(Row row, Context context) {
+        try {
+            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(context.openFileOutput("lastquote.dat", Context.MODE_PRIVATE));
+            outputStreamWriter.write(row.id);
+            outputStreamWriter.write("\n");
+            outputStreamWriter.write(row.quote);
+            outputStreamWriter.write("\n");
+            outputStreamWriter.write(row.author);
+            outputStreamWriter.close();
+        }
+        catch (IOException e) {
+            Log.e("Exception", "File write failed: " + e.toString());
+        }
+    }
+
+    public static Row readFromFile(Context context) {
+
+        Row ret = new Row();
+
+        try {
+            InputStream inputStream = context.openFileInput("lastquote.dat");
+
+            if ( inputStream != null ) {
+                InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+                BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+
+                String id = bufferedReader.readLine();
+                String quote = bufferedReader.readLine();
+                String author = bufferedReader.readLine();
+
+                ret = new Row(id, quote, author);
+
+                inputStream.close();
+            }
+        }
+        catch (FileNotFoundException e) {
+            Log.e("login activity", "File not found: " + e.toString());
+        } catch (IOException e) {
+            Log.e("login activity", "Can not read file: " + e.toString());
+        }
+
+        return ret;
+    }
+
+    /**
+     * @param context used to check the device version and DownloadManager information
+     * @return true if the download manager is available
+     */
+    public static boolean isDownloadManagerAvailable(Context context) {
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.GINGERBREAD) {
+            return true;
+        }
+        return false;
     }
 }

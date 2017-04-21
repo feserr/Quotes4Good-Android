@@ -1,6 +1,7 @@
 package com.gangergames.quotes4good;
 
 import android.annotation.TargetApi;
+import android.app.DownloadManager;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -8,8 +9,10 @@ import android.content.BroadcastReceiver;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
+import android.os.Environment;
 import android.support.v4.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
@@ -41,6 +44,7 @@ public class QuotesFragment extends Fragment implements
     private String mQuote;
 
     private ShareActionProvider mShareActionProvider;
+    private PendingIntent pendingIntentShare = null;
 
     private Context activityContext = null;
     private SwipeRefreshLayout mSwipeRefreshLayout = null;
@@ -70,6 +74,7 @@ public class QuotesFragment extends Fragment implements
         @Override
         protected Void doInBackground(Void... params) {
             row = (Row) listQuotes.get(rand.nextInt(listQuotes.size()));
+            Utility.writeToFile(row, activityContext);
 
             return null;
         }
@@ -78,12 +83,7 @@ public class QuotesFragment extends Fragment implements
         protected void onPostExecute(Void result) {
             super.onPostExecute(result);
 
-            // Set quote
-            quoteView.setText("\"" + row.quote + "\"");
-
-            // Set author
-            authorView.setText("- " + row.author);
-
+            changeMainQuote();
             changeNotification(row);
 
             // Notify swipeRefreshLayout that the refresh has finished
@@ -120,6 +120,9 @@ public class QuotesFragment extends Fragment implements
 
         rand = new Random();
 
+        // Check the quotes version
+        checkQuotesVersion();
+
         InputStream xmlQuotes = getResources().openRawResource(R.raw.quotes);
 
         try {
@@ -137,6 +140,7 @@ public class QuotesFragment extends Fragment implements
         // Get a randon row
         if (actualRow == null) {
             actualRow = (Row) listQuotes.get(rand.nextInt(listQuotes.size()));
+            Utility.writeToFile(actualRow, activityContext);
 
             changeMainQuote();
         }
@@ -151,8 +155,8 @@ public class QuotesFragment extends Fragment implements
             public void onReceive(Context context, Intent intent) {
                 if (intent.getAction().equals(ANOTHER_ACTION)) {
                     actualRow = getNewQuote();
-                    changeNotification(actualRow);
                     changeMainQuote();
+                    changeNotification(actualRow);
                 }
             }
         };
@@ -184,7 +188,7 @@ public class QuotesFragment extends Fragment implements
 
     private Intent createShareQuoteIntent() {
         Intent shareIntent = new Intent(Intent.ACTION_SEND);
-        shareIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
+        shareIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT);
         shareIntent.setType("text/plain");
         shareIntent.putExtra(Intent.EXTRA_TEXT, mQuote);
         return shareIntent;
@@ -194,8 +198,10 @@ public class QuotesFragment extends Fragment implements
     public void onResume() {
         super.onResume();
 
-        if (actualRow != null)
+        if (actualRow != null) {
             changeMainQuote();
+            changeNotification(actualRow);
+        }
     }
 
     @Override
@@ -221,11 +227,15 @@ public class QuotesFragment extends Fragment implements
     private Row getNewQuote() {
         // Get a randon row
         actualRow = (Row) listQuotes.get(rand.nextInt(listQuotes.size()));
+        Utility.writeToFile(actualRow, activityContext);
+
         return actualRow;
     }
 
     private void changeMainQuote() {
         if (actualRow != null) {
+            actualRow = Utility.readFromFile(activityContext);
+
             // Set quote
             quoteView.setText("\"" + actualRow.quote + "\"");
 
@@ -233,7 +243,11 @@ public class QuotesFragment extends Fragment implements
             authorView.setText("-" + actualRow.author);
 
             // We still need this for the share intent
-            mQuote = String.format("\"%sª\" - %s", actualRow.quote, actualRow.author);
+            mQuote = String.format("\"%s\" - %s", actualRow.quote, actualRow.author);
+
+            if (mShareActionProvider != null) {
+                mShareActionProvider.setShareIntent(createShareQuoteIntent());
+            }
         }
     }
 
@@ -251,7 +265,7 @@ public class QuotesFragment extends Fragment implements
         sendIntent.setAction(Intent.ACTION_SEND);
         sendIntent.putExtra(Intent.EXTRA_TEXT, mQuote);
         sendIntent.setType("text/plain");
-        PendingIntent pendingIntentShare = PendingIntent.getActivity(context, NOTIFICATION_ID,
+        pendingIntentShare = PendingIntent.getActivity(context, NOTIFICATION_ID,
                 Intent.createChooser(sendIntent, getString(R.string.share)), PendingIntent.FLAG_UPDATE_CURRENT);
 
         notificationBuilder = new NotificationCompat.Builder(context)
@@ -265,15 +279,13 @@ public class QuotesFragment extends Fragment implements
                 .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.ic_quotes_launcher))
                 .setStyle(new NotificationCompat.BigTextStyle()
                         .bigText("Test"))
-                .addAction (R.drawable.ic_next_quotes,
+                .addAction(R.drawable.ic_next_quotes,
                         getString(R.string.get_another), pendingIntentAnother)
-                .addAction (R.drawable.ic_share_quote,
+                .addAction(R.drawable.ic_share_quote,
                         getString(R.string.share), pendingIntentShare);
 
         quoteNotification = notificationBuilder.build();
-
         quoteNotification.flags |= Notification.FLAG_NO_CLEAR | Notification.FLAG_ONGOING_EVENT;
-
         notificationManager.notify(NOTIFICATION_ID, quoteNotification);
     }
 
@@ -283,8 +295,35 @@ public class QuotesFragment extends Fragment implements
         notificationBuilder.setStyle(new NotificationCompat.BigTextStyle()
                 .bigText("\"" + row.quote + "\"\n -" + row.author));
 
+        Intent sendIntent = new Intent();
+        sendIntent.setAction(Intent.ACTION_SEND);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, mQuote);
+        sendIntent.setType("text/plain");
+        pendingIntentShare = PendingIntent.getActivity(activityContext, NOTIFICATION_ID,
+                Intent.createChooser(sendIntent, getString(R.string.share)), PendingIntent.FLAG_UPDATE_CURRENT);
+
         quoteNotification = notificationBuilder.build();
         quoteNotification.flags |= Notification.FLAG_NO_CLEAR | Notification.FLAG_ONGOING_EVENT;
         notificationManager.notify(NOTIFICATION_ID, quoteNotification);
+    }
+
+    private boolean checkQuotesVersion() {
+        String url = "url you want to download";
+        DownloadManager.Request request = new DownloadManager.Request(Uri.parse(url));
+        request.setDescription("Some descrition");
+        request.setTitle("Some title");
+
+        // In order for this if to run, you must use the android 3.2 to compile your app
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+            request.allowScanningByMediaScanner();
+            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+        }
+        request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "name-of-the-file.ext");
+
+        // Get download service and enqueue file
+        DownloadManager manager = (DownloadManager) activityContext.getSystemService(Context.DOWNLOAD_SERVICE);
+        manager.enqueue(request);
+
+        return true;
     }
 }
